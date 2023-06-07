@@ -366,7 +366,77 @@ padding: 30px 45px;
 }
 
 .contacts_vk {
-  margin-left: 58px;
+  margin-right: 58px;
+}
+
+footer {
+  background: #413C60;;
+  display: flex;
+  justify-content:center;
+  padding: 15px 42px;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info_logo {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  text-align: justify;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.footer-info_li {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  list-style-type: none;
+  padding: 9px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-info__img{
+  padding-right: 15px;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.footer-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0.025em;
+  margin-top: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-adress {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-ico {
+  margin-right: 35px;
 }
 
 /*  каталог услуг   */
