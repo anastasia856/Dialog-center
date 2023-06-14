@@ -8,7 +8,7 @@ a {
 }
 
 body {
-  background-color: white;
+  background: #FBF8FF;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
@@ -91,13 +91,13 @@ body {
 .about-block {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  margin: 0 5%;
 }
 
 .about-desc {
   max-width: 600px;
   max-height: 550px;
-  margin-right: 30px;
 }
 
 .about-desc h1 {
@@ -114,7 +114,14 @@ body {
   line-height: 42px;
   letter-spacing: -1px;
   color: #00233d;
-  padding-bottom: 121px;
+}
+
+.about-btn {
+  visibility: hidden;
+}
+
+.about-img {
+  width: 60%;
 }
 
 .promo {
@@ -127,10 +134,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-}
-
-.promo-box_text {
-  padding-left: 60px;
 }
 
 .promo_title {
@@ -151,7 +154,7 @@ body {
 }
 
 .promo_img {
-  padding-right: 300px;
+  padding-right: 23%;
 }
 
 .feature {
@@ -167,6 +170,7 @@ body {
 
 .feature_item {
   max-width: 250px;
+  margin: 0 12px;
 }
 
 .feature_item h3 {
@@ -227,12 +231,17 @@ body {
 .profile-box_div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; 
+  margin: 0 5%;
+}
+
+.profile_img {
+  margin-top: 67px;
 }
 
 .profile-text {
   max-width: 685px;
-  padding-left: 60px;
+  padding-left: 5%;
 }
 
 .profile_name {
@@ -276,12 +285,13 @@ padding: 13px 0;
   padding-top: 10px;
   padding-bottom: 24px;
   justify-content: flex-end;
+  margin-left: -50px;
 }
 
 .lessons {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin: 30px 20px;
 }
 
 .lessons-container {
@@ -380,9 +390,8 @@ padding: 30px 45px;
 }
 
 .reviews-container {
-  flex-direction: column;
-  align-items: center;
   position: relative;
+  display: grid;
 }
 
 .reviews_span {
@@ -392,12 +401,13 @@ padding: 30px 45px;
 .reviews_img {
   position: relative;
   z-index: 1;
-  left: 280px;
+  place-self: end;
+  margin-right: 10%;
 }
 
 .slider {
   position: relative;
-  max-width: 1055px;
+  max-width: 1024px;
   overflow: hidden;
   z-index: 0;
   margin-top: -38px;
@@ -411,7 +421,7 @@ padding: 30px 45px;
 .reviews_block {
   background: #D2C7EB;
   border-radius: 90px;
-  max-width: 1055px;
+  /* max-width: 1024px; */
   display: flex;
   justify-content: center;
 }
@@ -815,6 +825,7 @@ footer {
 
 .services-box-main {
   margin-bottom: 50px;
+  background: #FBF8FF;
 }
 
 .services-card {
@@ -1164,7 +1175,7 @@ footer {
   padding-bottom: 32px;
 }
 
-/* адаптив для шапки и каталога в промежуточных размерах */
+/* адаптив  */
 
 @media (max-width: 1220px) {
   .header {
@@ -1172,17 +1183,38 @@ footer {
   }
 
   .header_logo {
-    width: 95px;
-    height: 35px;
+    width: 90px;
   }
 
+  .header-nav {
+    padding: 0;
+  }
   .header-nav a {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 15px;
   }
 
   .header_boxbtn {
-    display: none;
+    font-size: 14px;
+    padding: 9px 10px;
+  }
+
+  .about-desc h1 {
+    font-size: 28px;
+    padding-bottom: 32px;
+  }
+  .about-desc p {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .lessons_box_div2 p {
+    font-size: 22px;
+    padding: 20px 25px;
+  }
+
+  .lessons_img {
+    width: 50%;
   }
 
   .services-card {
@@ -1216,13 +1248,76 @@ footer {
   }
 }
 
-/* @media (max-width: 1060px) {
-  .reviews_block {
-    width: calc();
-  }
-} */
-
 @media (max-width: 1024px) {
+  .promo_title {
+    font-size: 32px;
+    line-height: 28px;
+  }
+
+  .promo_desc {
+    font-size: 18px;
+  }
+
+  .promo_img {
+    width: 18%;
+  }
+
+  .feature {
+    padding-top: 56px;
+  }
+
+  .feature_item h3 {
+    font-size: 18px;
+  }
+  .feature_item p {
+    font-size: 14px;
+  }
+
+  .feature_img {
+    width: 14%;
+  }
+
+  .profile_img {
+    width: 50%;
+    margin-top: 50px;
+  }
+  
+  .profile_name {
+    font-size: 24px;
+    padding: 24px 0;
+  }
+
+  .profile_speciality {
+    font-size: 20px;
+  }
+
+  .profile_list li {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 8px 0;
+  }
+
+  .reviews {
+    margin-top: 0;
+  }
+
+  .reviews_title {
+    margin: 50px 0;
+  }
+
+  .reviews_text-box {
+    padding: 55px 0;
+  }
+
+  .reviews_name {
+    padding-bottom: 36px;
+  }
+
+  .reviews_text {
+    font-size: 24px;
+    margin: 0 15px;
+  }
+
   .heading {
     margin-top: 48px;
   }
@@ -1422,12 +1517,97 @@ footer {
 /* <---- планшет ----> */
 
 @media (max-width: 768px) {
-  .heading {
-    font-size: 20px;
+  .header {
+    padding: 10px 0;
+  }
+  
+  .header-nav a {
+    font-size: 12px;
   }
 
-  .caption {
+  .header_boxbtn-hide {
+    display: none;
+  }
+
+  .about-btn {
+    visibility: visible;
+    width: 155px;
+    font-size: 12px;
+    margin-top: 14px;
+  }
+
+  .about-desc h1 {
+    font-size: 20px;
+    line-height: 23px;
+    padding-bottom: 24px;
+  }
+
+  .about-desc p {
     font-size: 16px;
+    line-height: 19px;
+  }
+
+  .promo-box {
+    padding: 0 5%;
+  }
+
+  .promo_title, .reviews_name {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  
+  .promo_desc, .feature_item h3, .caption{
+    font-size: 16px;
+  }
+
+  .feature_item p {
+    font-size: 12px;
+  }
+
+  .services-btn a {
+    font-size: 13px;
+    padding: 13px 18px;
+  }
+
+  .profile {
+    margin-top: 56px;
+  }
+
+  .profile_name {
+    font-size: 17px;
+    padding: 16px 0;
+  }
+
+  .profile_list li {
+    font-size: 15px;
+  }
+
+  .lessons_box_div2 p {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .reviews_title {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+
+  .reviews_img {
+    width: 213px;
+    /* margin-right: 15%; */
+  }
+
+  .slider {
+    margin-top: -25px;
+  }
+
+  .reviews_text {
+    font-size: 20px;
+    margin: 0 40px;
+  }
+
+  .heading {
+    font-size: 20px;
   }
 
   .box-logoped p {
