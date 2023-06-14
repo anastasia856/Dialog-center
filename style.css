@@ -8,7 +8,7 @@ a {
 }
 
 body {
-  background: #FBF8FF;
+  background: #FFFFFF;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
@@ -340,6 +340,7 @@ padding: 30px 45px;
 
 .contacts_container {
   flex-direction: column;
+  margin: 0 50px;
 }
 
 .contacts_title, .reviews_title {
@@ -381,6 +382,10 @@ padding: 30px 45px;
 
 .contacts_icons:hover {
   transform: scale(1.1);
+}
+
+.contacts_map {
+  width: 70%;
 }
 
 .reviews {
@@ -463,6 +468,7 @@ padding: 30px 45px;
   height: 15px;
   border-radius: 50px;
   background-color: #A6A6A6;
+  cursor: pointer;
 }
 
 .slider__dot:hover {
@@ -825,7 +831,7 @@ footer {
 
 .services-box-main {
   margin-bottom: 50px;
-  background: #FBF8FF;
+  background: #FFFFFF;
 }
 
 .services-card {
@@ -1215,6 +1221,26 @@ footer {
 
   .lessons_img {
     width: 50%;
+  }
+
+  .contacts_text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+  }
+
+  .contacts_text {
+    font-size: 20px;
+    padding-bottom: 0;
+  }
+
+  .contacts_text-indent {
+    padding-bottom: 32px;
+  }
+
+  .contacts_links {
+    margin-top: 32px;
   }
 
   .services-card {
