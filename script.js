@@ -1,6 +1,13 @@
-let sliderLine = document.querySelector('.slider__line');
-let sliderDots = document.querySelectorAll('.slider__dot');
-let sliderDiv = document.querySelectorAll('.reviews_block');
+$('a[href^="#"]').click(function(){ 
+    let scroll = $(this).attr('href');  
+    $('html, body').animate({           
+    scrollTop:  $(scroll).offset().top - 50  
+    }, 600);                            
+});
+
+let sliderLine = document.querySelector('.slider__line'),
+    sliderDots = document.querySelectorAll('.slider__dot'),
+    sliderDiv = document.querySelectorAll('.reviews_block');
 
 let sliderCount = 0;
 let sliderWidth;
@@ -34,9 +41,3 @@ sliderDots.forEach((dot, index) => {
     })
 })
 
-$('a[href^="#"]').click(function(){ 
-    let scroll = $(this).attr('href');  
-    $('html, body').animate({           
-    scrollTop:  $(scroll).offset().top - 60  
-    }, 600);                            
-});
