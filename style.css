@@ -365,8 +365,12 @@ padding: 30px 45px;
   text-align: center;
 }
 
-.contacts_vk {
+.contacts_icons {
   margin-right: 58px;
+}
+
+.contacts_icons:hover {
+  transform: scale(1.1);
 }
 
 .reviews {
@@ -529,6 +533,10 @@ footer {
   margin-right: 35px;
 }
 
+.footer-ico:hover {
+  transform: scale(0.9);
+}
+
 /*  каталог услуг   */
 
 .text {
@@ -653,12 +661,6 @@ footer {
   margin-top: 64px;
 }
 
-.button-services a:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  background-color: #7c1ba9;
-  transition: 0.5s;
-}
-
 .button-services a {
   padding: 11px 24px;
   background: #473e83;
@@ -670,6 +672,11 @@ footer {
   text-decoration: none;
 }
 
+.button-services a:hover, .header_boxbtn:hover, .services-btn a:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: #7c1ba9;
+  transition: 0.5s;
+}
 .reasons {
   max-width: 1288px;
   display: flex;
