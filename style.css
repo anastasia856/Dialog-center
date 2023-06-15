@@ -524,7 +524,7 @@ footer {
 .footer-nav {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  justify-content: flex-end;
 }
 
 .footer-text {
@@ -534,13 +534,14 @@ footer {
   font-size: 16px;
   line-height: 110%;
   letter-spacing: 0.025em;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: #ffffff;
   text-decoration: none;
+  padding: 10px 0;
 }
 
 .footer-adress {
-  width: 320px;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1299,9 +1300,6 @@ footer {
     font-size: 14px;
   }
 
-  .feature_img {
-    width: 14%;
-  }
 
   .profile_img {
     width: 50%;
@@ -1342,6 +1340,31 @@ footer {
   .reviews_text {
     font-size: 24px;
     margin: 0 15px;
+  }
+
+  .contacts_text-box {
+    padding: 8% 0;
+  }
+
+  .contacts_icons {
+    width: calc(25px + (54 - 25) * ((100vw - 320px)) / (1024 - 320));
+  }
+
+  footer {
+    padding: 12px 25px;
+  }
+  .footer-info_li {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    padding: 7px 0;
+  }
+
+  .footer-ico {
+    width: calc(15px + (25 - 15) * ((100vw - 320px)) / (1024 - 320));
   }
 
   .heading {
@@ -1586,6 +1609,10 @@ footer {
     font-size: 16px;
   }
 
+  .feature_img {
+    width: 35px;
+  }
+
   .feature_item p {
     font-size: 12px;
   }
@@ -1631,6 +1658,37 @@ footer {
     font-size: 20px;
     margin: 0 40px;
   }
+
+  .contacts_title {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+
+  .contacts_text {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
+  .footer-info_logo {
+    font-size: 16px;
+  }
+
+  .footer-info_li {
+    font-size: 10px;
+  }
+
+  .footer-info__img {
+    width: 10px;
+    padding-right: 8px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+    padding: 4px 0;
+  }
+
 
   .heading {
     font-size: 20px;
