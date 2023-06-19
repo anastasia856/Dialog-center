@@ -5,6 +5,12 @@ $('a[href*="#"]').click(function(){
     }, 600);                            
 });
 
+$(document).ready(function() {
+    $('.header_burger').click(function(event) {
+        $('.header_burger, .header_menu').toggleClass('active');
+    });
+})
+
 let sliderLine = document.querySelector('.slider__line'),
     sliderDots = document.querySelectorAll('.slider__dot'),
     sliderDiv = document.querySelectorAll('.reviews_block');
