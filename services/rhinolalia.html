@@ -20,21 +20,27 @@
   <body>
     <header class="header">
       <div class="container-header">
-        <a href="index.html"><img class="header_logo" src="img/logo.png" alt="logo"/></a>
-        <ul class="header-nav">
-          <li><a href="index.html#profile">О нас</a></li>
-          <li><a href="./catalog.html">Каталог</a></li>
-          <li><a href="#">Записаться онлайн</a></li>
-          <li><a href="index.html#contacts">Контакты</a></li>
-          <li><a href="index.html#reviews">Отзывы</a></li>
-        </ul>
-        <div class="header_boxbtn">
-          <a href="#"><img src="img/icon_tel.png" alt="icon" /></a>
-          <a href="#" class="header_button text">Заказать звонок</a>
+        <div class="header_body">
+          <a href="../index.html"><img class="header_logo" src="../img/logo.png" alt="logo"/></a>
+          <div class="header_burger">
+            <span></span>
+          </div>
+          <nav class="header_menu">
+            <ul class="header-nav">
+              <li><a href="../index.html#profile">О нас</a></li>
+              <li><a href="../catalog.html">Каталог</a></li>
+              <li><a href="#">Записаться онлайн</a></li>
+              <li><a href="../index.html#contacts">Контакты</a></li>
+              <li><a href="../index.html#reviews">Отзывы</a></li>
+          </ul>
+          </nav>  
+          <div class="header_boxbtn header_boxbtn-hide">
+            <a href="#"><img src="../img/icon_tel.png" alt="icon" /></a>
+            <a href="#" class="header_button text">Заказать звонок</a>
+          </div>
         </div>
       </div>
     </header>
-
     <main class="main">
       <section class="top">
         <img src="../img/image2.png" alt="service image" />
@@ -135,6 +141,35 @@
           <a href="#" class="button-link text">Записаться</a>
         </div>
       </section>
-    </main>
+    </main>    
+    <footer>
+      <div class="container footer_container">
+        <div class="footer-info">
+          <a href="../index.html" class="footer-info_logo">Dialog</a>
+          <ul class="footer-info_list">
+            <li class="footer-info_li"><img class="footer-info__img" src="../img/ico_tel.png" alt="phone icon"/> +7 (914) 29-30-88</li>
+            <li class="footer-info_li"><img class="footer-info__img" src="../img/ico_clock.png" alt="hour icon"/> с 8:30 до 20:00</li>
+            <li class="footer-info_li"><img class="footer-info__img" src="../img/ico_email.png" alt="email icon"/> dialogdialog@company.com</li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <a href="../index.html#profile" class="footer-text">О нас</a>
+          <a href="#" class="footer-text">Партнерам</a>
+          <a href="../index.html#contacts" class="footer-text">Контакты</a>
+        </div>
+        <div class="footer-nav">
+          <a href="../catalog.html" class="footer-text">Каталог</a>
+          <a href="../index.html#reviews" class="footer-text">Отзывы</a>
+          <a href="#" class="footer-text">Статьи</a>
+        </div>
+        <div class="footer-adress">
+          <p class="footer-text">Адрес нашего офиса:<br>г. Якутск<br>Улица Петра Алексеевна, офис 5, этаж 4.</p>
+          <div class="footer-link">
+            <a href="#"><img src="../img/ico_vk.png" class="footer-ico" alt="vk icon"/></a>
+            <a href="#"><img src="../img/ico_whatsapp.png" class="footer-ico" alt="whatsApp icon"/></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

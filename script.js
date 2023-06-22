@@ -1,9 +1,16 @@
 $('a[href*="#"]').click(function(){ 
     let scroll = $(this).attr('href');  
-    $('html, body').animate({           
+    $('html, body').animate({ 
     scrollTop:  $(scroll).offset().top - 50  
     }, 600);                            
 });
+
+$(document).ready(function() {
+    $('.header_burger').click(function(event) {
+        $('.header_burger, .header_menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+})
 
 let sliderLine = document.querySelector('.slider__line'),
     sliderDots = document.querySelectorAll('.slider__dot'),
