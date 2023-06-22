@@ -1035,10 +1035,7 @@ footer {
 }
 
 .top img {
-  width: 100%;
-  margin-top: -76px;
-  position: relative;
-  z-index: -1;
+  width: 100vw;
 }
 
 .top-box {
@@ -2085,6 +2082,9 @@ footer {
     height: 70vh;
   }
 
+  .main {
+    margin-top: 60px;
+  }
 
   /* страница подробнее */
 
