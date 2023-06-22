@@ -2074,9 +2074,11 @@ footer {
     padding: 2% 0;
     place-self: start;
   }
-  /* .contacts_text-box div:first-of-type {
+
+  .contacts_text-box div:first-of-type {
     margin-right: -50vw;
-  } */
+    width: 100vw;
+  }
 
   .contacts_map {
     width: 95vw;
@@ -2548,6 +2550,12 @@ footer {
     font-size: 12px;
     line-height: 14px;
     padding-bottom: 8px;
+  }
+  .footer-info_logo {
+    display: none;
+  }
+  .footer-adress {
+    display: none;
   }
 }
 
